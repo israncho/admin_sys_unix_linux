@@ -1,0 +1,6 @@
+#!/bin/bash
+
+USER_HOME="/home/$1"
+OUTPUT_FILE="$USER_HOME/backup_$1.tar.gz"
+
+tar czvf "$OUTPUT_FILE" -C "$USER_HOME" .

@@ -1,0 +1,8 @@
+Package: mkbackup
+Priority: optional
+Section: misc
+Maintainer: Israel Gutierrez <isragutierrez@ciencias.unam.mx> 
+Architecture: all
+Version: 1.0
+Depends: 
+Description: Script para respaldar un directorio del usuario.
