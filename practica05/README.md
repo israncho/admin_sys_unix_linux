@@ -92,3 +92,10 @@ que se decidio usar otra virtual con mas espacio.
 
 Se retoma la evidencia para la practica desde de donde
 se dejo pero ejecutandose desde otra vm.
+
+![kernel_16](img/kernel_16.png)
+
+Despues de actualizar el grub, reiniciamos y verificamos el cambio de
+kernel.
+
+![kernel_17](img/kernel_17.png)
