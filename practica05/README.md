@@ -34,6 +34,13 @@ Lo descomprimimos
 
 ![kernel_02](img/kernel_02.png)
 
+Copiamos la configuracion que ya estaba en uso
+y ejecutamos 
+
+```
+make menuconfig
+```
+
 ![kernel_03](img/kernel_03.png)
 
 Seleccionamos `load`
@@ -49,12 +56,39 @@ Ahora seleccionamos `save`
 
 ![kernel_08](img/kernel_08.png)
 
+Compilamos el kernel ejecutanto
+
+```
+make -j $(nproc)
+```
+
 ![kernel_09](img/kernel_09.png)
+
 
 ![kernel_10](img/kernel_10.png)
 
+Luego compilamos los modulos necesarios
+que fueron seleccionados en la configuracion.
+
 ![kernel_11](img/kernel_11.png)
+
+Preparamos nuestro kernel para usarlo
 
 ![kernel_12](img/kernel_12.png)
 
+Hubo un error pues nos quedamos sin espacio en `/var`
 ![kernel_13](img/kernel_13.png)
+
+![kernel_14](img/kernel_14.png)
+
+Le di mas espacio a `/var`, pero al parecer
+tambien hay poco espacio en `/boot`, por lo que
+ahora agrandare este
+
+![kernel_15](img/kernel_15.png)
+
+Hubo muchos problemas con el espacio por lo 
+que se decidio usar otra virtual con mas espacio.
+
+Se retoma la evidencia para la practica desde de donde
+se dejo pero ejecutandose desde otra vm.
