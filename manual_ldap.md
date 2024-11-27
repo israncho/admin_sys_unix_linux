@@ -381,6 +381,24 @@ userPassword: {SSHA}q7SNPEOpo9GNgFjyTfeq09XKBfQNYMIR
 ldapadd -D "cn=admin,dc=phctxhfc,dc=unam,dc=mx" -W -f add_readonly_user.ldif
 ```
 
+```bash
+vim add_rw_user.ldif
+```
+
+```
+dn: cn=readwrite,dc=phctxhfc,dc=unam,dc=mx
+objectClass: inetOrgPerson
+cn: readwrite
+sn: readwrite
+givenName: readwrite
+displayName: readwrite
+userPassword: {SSHA}QUtvjhpFvv2vMG6DTZ8heINpjbUAozqq
+```
+
+```bash
+ldapadd -D "cn=admin,dc=phctxhfc,dc=unam,dc=mx" -W -f add_rw_user.ldif
+```
+
 # Configuracion de acceso
 
 ```bash
@@ -391,9 +409,9 @@ vim access_config.ldif
 dn: olcDatabase={1}mdb,cn=config
 changetype: modify
 replace: olcAccess
-olcAccess: {0}to attrs=userPassword by self write by anonymous auth by * none
-olcAccess: {1}to attrs=shadowLastChange by self write by * read
-olcAccess: {2}to * by dn="cn=admin,dc=phctxhfc,dc=unam,dc=mx" read by dn="cn=readonly,dc=phctxhfc,dc=unam,dc=mx" read by * none
+olcAccess: {0}to attrs=userPassword by dn="cn=admin,dc=phctxhfc,dc=unam,dc=mx" write by dn="cn=readwrite,dc=phctxhfc,dc=unam,dc=mx" write by anonymous auth by * none
+olcAccess: {1}to attrs=shadowLastChange by dn="cn=admin,dc=phctxhfc,dc=unam,dc=mx" write by dn="cn=readwrite,dc=phctxhfc,dc=unam,dc=mx" write by * read
+olcAccess: {2}to * by dn="cn=admin,dc=phctxhfc,dc=unam,dc=mx" write by dn="cn=readwrite,dc=phctxhfc,dc=unam,dc=mx" write by dn="cn=readonly,dc=phctxhfc,dc=unam,dc=mx" read by * none
 ```
 
 ```bash
@@ -402,7 +420,9 @@ ldapmodify -Y EXTERNAL -H ldapi:/// -f reglas.ldif
 
 Ahora solo pueden leer el admin y readonly
 
-# Configuracion con apache
+----------------------------------------------------------------------------
+
+# Configuracion con apache, para autenticacion
 
 ```bash
 sudo apt update
