@@ -36,3 +36,9 @@ Descargamos el código fuente de phpMyAdmin
 
 ![requisitos_09](img/requisitos_09.png)
 
+![requisitos_10](img/requisitos_10.png)
+
+![requisitos_11](img/requisitos_11.png)
+
+![requisitos_12](img/requisitos_12.png)
+
