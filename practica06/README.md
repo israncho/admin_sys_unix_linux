@@ -34,6 +34,8 @@ Descargamos el código fuente de phpMyAdmin
 
 ![requisitos_08](img/requisitos_08.png)
 
+Configuramos phpMyAdmin
+
 ![requisitos_09](img/requisitos_09.png)
 
 ![requisitos_10](img/requisitos_10.png)
@@ -41,4 +43,28 @@ Descargamos el código fuente de phpMyAdmin
 ![requisitos_11](img/requisitos_11.png)
 
 ![requisitos_12](img/requisitos_12.png)
+
+Creamos las tablas
+
+![requisitos_13](img/requisitos_13.png)
+
+Creamos los usuarios necesarios
+
+![requisitos_14](img/requisitos_14.png)
+
+Creamos el archivo de configuracion de phpMyAdmin para
+apache
+
+![requisitos_15](img/requisitos_15.png)
+
+habilitamos el archivo de configuracion de phpMyAdmin para
+apache
+
+![requisitos_16](img/requisitos_16.png)
+
+Ahora verificamos que todo salio de forma correcta
+
+![requisitos_17](img/requisitos_17.png)
+
+![requisitos_18](img/requisitos_18.png)
 
