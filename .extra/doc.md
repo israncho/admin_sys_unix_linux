@@ -1,4 +1,5 @@
-# Configuramos el hostname
+# LDAP
+## Configuramos el hostname
 
 ```bash
 vim /etc/hosts
@@ -435,41 +436,41 @@ a la ruta `https://<nombre_de_dominio>/lam`
 
 Luego para la configuracion vamos a donde dice `LAM configuration`
 
-![LAM_01](resources/img/LAM_01.png)
+![LAM_01](img/LAM_01.png)
 
 Luego a donde dice `Edit server profiles`
 
-![LAM_02](resources/img/LAM_02.png)
+![LAM_02](img/LAM_02.png)
 
 La contrase~na por defecto es `lam`
 
-![LAM_03](resources/img/LAM_03.png)
+![LAM_03](img/LAM_03.png)
 
 Luego agregamos la direccion del servidor que usara ldap
 
-![LAM_04](resources/img/LAM_04.png)
+![LAM_04](img/LAM_04.png)
 
 Luego configuramos el metodo de login para los usuarios,
 proporcionamos el DN del admin del ldap y su contrase~na 
 y el filtro que se usara para buscar a los usuarios
 
 
-![LAM_05](resources/img/LAM_05.png)
+![LAM_05](img/LAM_05.png)
 
 No olvidamos selecionar `save`
 
-![LAM_06](resources/img/LAM_06.png)
+![LAM_06](img/LAM_06.png)
 
 Luego nos movemos a la pesta~na de account types y agregamos 
 nuestos DNs de los grupos y usuarios que creamos
 
-![LAM_07](resources/img/LAM_07.png)
+![LAM_07](img/LAM_07.png)
 
-![LAM_07](resources/img/LAM_07.png)
+![LAM_07](img/LAM_07.png)
 
 Y de igual forma no olvidamos guardar nuestras configuraciones
 
-![LAM_06](resources/img/LAM_06.png)
+![LAM_06](img/LAM_06.png)
 
 
 # Configuracion de sftp y ldap
@@ -479,9 +480,9 @@ apt install openssh-server
 apt install libnss-ldap libpam-ldap
 ```
 
-![ldap_sftp_01](resources/img/ldap_sftp_01.png)
+![ldap_sftp_01](img/ldap_sftp_01.png)
 
-![ldap_sftp_02](resources/img/ldap_sftp_02.png)
+![ldap_sftp_02](img/ldap_sftp_02.png)
 
 
 
