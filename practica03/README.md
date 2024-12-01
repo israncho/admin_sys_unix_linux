@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1 
 # Practica 03 - Asegurando GRUB 
 
+### Jesus Israel Gutierrez Elizalde
+
 
 Agregamos la opcion `init=/bin/sh:` para que durante el arranque en lugar de iniciar
 el sistema normalmente, cargue una shell /bin/sh.

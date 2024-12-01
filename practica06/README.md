@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1
 # Practica 06 - Instalar phpMyAdmin desde el codigo fuente 
 
+### Jesus Israel Gutierrez Elizalde
+
 ## Requisitos previos
 
 Mostramos los pasos para instalar y configurar un entorno LAMP

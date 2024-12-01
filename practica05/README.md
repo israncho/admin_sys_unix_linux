@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1
 # Practica 05 - Compilar un kernel
 
+### Jesus Israel Gutierrez Elizalde
+
 El compilar el kernel es un proceso pesado
 por lo que le daremos mas recursos a la maquina virtual
 donde realizaremos esto.

@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1
 # Practica 04 - Paquetes deb y Paginas de manual
 
+### Jesus Israel Gutierrez Elizalde
+
 ## Creacion de nuestro paquet deb
 
 Creamos nuestro propio paquete DEB usando  [`dpkg`](https://en.wikipedia.org/wiki/Dpkg),

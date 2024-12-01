@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1 
 # Practica 02 - GParted y LVM
 
+### Jesus Israel Gutierrez Elizalde
+
 GParted (GNOME Partition Editor) es una herramienta de software libre que permite
 crear, redimensionar, mover, y gestionar particiones en discos duros y otros medios
 de almacenamiento.

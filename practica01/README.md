@@ -1,6 +1,8 @@
 # Administracion de sistemas Unix/Linux 2025-1 
 # Practica 01 - Instalación de VMware y Linux
 
+### Jesus Israel Gutierrez Elizalde
+
 **Nota:** Tuve demasiados problemas para instalar `VMware` en mi sistema.
 
 ```bash
